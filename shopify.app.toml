@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "demo-merchantdise-app"
+client_id = "22a97e16c1f7481469532e9f514f5fa7"
+application_url = "https://throat-scheduled-independent-destruction.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://throat-scheduled-independent-destruction.trycloudflare.com/auth/callback",
+  "https://throat-scheduled-independent-destruction.trycloudflare.com/auth/shopify/callback",
+  "https://throat-scheduled-independent-destruction.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "devprojectza.myshopify.com"
